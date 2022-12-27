@@ -1,0 +1,31 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(to right, #000000, #480a0a);
+}
+
+.calculator-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+    grid-gap: 10px;
+    max-width: 30rem;
+    margin: 4rem auto;  
+    
+
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    display: flex;
+  
+}
